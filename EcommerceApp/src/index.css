@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+.gym-text {
+  @apply text-xl tracking-wide;
+  font-family: 'Bebas Neue', sans-serif;
+}
