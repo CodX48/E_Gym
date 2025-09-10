@@ -1,8 +1,10 @@
 import { NavBar } from "../components/NavBar";
+import { P_Cards } from "../components/ProgramsCards";
 
 // HeroSection.jsx
 function HeroSection() {
   return (
+    <>
     <section className="relative overflow-hidden bg-gray-900 text-white gym-text">
       {/* Background overlay */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-gray-800/60 to-gray-900" />
@@ -77,6 +79,14 @@ function HeroSection() {
 
       </div>
     </section>
+    <section className="w-[100%] relative flex flex-col justify-between items-center ring-red p-60 gym-text pt-5 bg-zinc-100">
+     <div
+        id="particles-js"
+        className="top-0 absolute left-0 w-full h-full z-10 bg-[#ffffff]"
+        />
+    <P_Cards />
+    </section>
+    </>
   );
 }
 

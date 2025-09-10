@@ -7,7 +7,7 @@ const NavBar = () => {
       {/* Navigation Links */}
       <div className="hidden md:flex justify-between items-center gap-8">
         <p className="hover:text-pink-600 cursor-pointer transition-colors">Home</p>
-        <p className="hover:text-pink-600 cursor-pointer transition-colors">Programs</p>
+        <p className="hover:text-pink-600 cursor-pointer transition-colors"><a href="#PROGRAMS">Programs</a></p>
         <p className="hover:text-pink-600 cursor-pointer transition-colors">Join Us</p>
         <p className="hover:text-pink-600 cursor-pointer transition-colors">Contact Us</p>
       </div>

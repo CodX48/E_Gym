@@ -4,3 +4,10 @@
   @apply text-xl tracking-wide;
   font-family: 'Bebas Neue', sans-serif;
 }
+.CardHoverd{
+  transition: all;
+}
+.CardHoverd:hover .Card-img{
+  @apply opacity-100;
+  transition-duration: 0.5s;
+}
