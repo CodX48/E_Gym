@@ -79,10 +79,10 @@ function HeroSection() {
 
       </div>
     </section>
-    <section className="w-[100%] relative flex flex-col justify-between items-center ring-red p-60 gym-text pt-5 bg-zinc-100">
+    <section className="w-[100%] relative flex flex-col justify-between items-start lg:p-10 md:p-5 sm:p-2 gym-text bg-gray-900">
      <div
         id="particles-js"
-        className="top-0 absolute left-0 w-full h-full z-10 bg-[#ffffff]"
+        className="top-0 absolute left-0 w-full h-full z-10 bg-gray-900"
         />
     <P_Cards />
     </section>
