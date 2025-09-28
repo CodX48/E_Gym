@@ -6,12 +6,12 @@ import { P_Cards } from "../components/ProgramsCards";
 function HeroSection() {
   return (
     <>
-    <section className="relative overflow-hidden  text-white gym-text z-30 ">
+    <section className="relative overflow-hidden text-white gym-text z-30 ">
       {/* Background overlay */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-gray-800/60 to-gray-900" />
       <NavBar/>
-      <div className="xl:flex justify-between items-start xl:px-10 md:block">
-      <div className="relative mx-auto max-w-6xl px-6 py-20 md:py-24">
+      <div className="xl:flex justify-between items-start xl:px-10 md:block py-14">
+      <div className="relative mx-auto max-w-6xl px-6 md:py-24 py-50">
         {/* Headline */}
         <h1 className="font-gym text-4xl leading-tight md:text-6xl">
           Achieve Your Goal, Step by Step
@@ -77,14 +77,14 @@ function HeroSection() {
 
       </div>
     </section>
-    <section className="w-[100%] relative flex flex-col justify-between items-start  md:p-5 sm:p-2 gym-text ">
+    <section className="w-[100%] relative flex flex-col justify-between items-start md:p-5 sm:p-2 gym-text ">
     <div
         id="particles-js"
-        className="top-0 absolute left-0 w-full h-full z-10 bg-gray-900"
+        className="top-0 absolute left-0 w-full h-full z-10 bg-gradient-to-b from-gray-900 to-gray-950"
         />
     <P_Cards />
     </section>
-    <section className="flex justify-center p-5 bg-zinc-100 w-full" >
+    <section className="flex justify-center p-5 bg-gray-950 w-full" >
       <FitnessCards />
     </section>
     </>

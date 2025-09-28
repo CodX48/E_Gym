@@ -64,11 +64,11 @@ const P_Cards = () => {
   }, []);
 
   return (
-    <section id='PROGRAMS' className="relative w-full">
+    <section id='PROGRAMS' className="relative w-full py-14">
       {/* Particles background */}
       <div className="relative z-10 p-10">
         <h1 className="text-5xl text-zinc-100">PROGRAMS</h1>
-        <div className="w-full grid md:grid-cols-3 mt-6 rounded-md overflow-hidden shadow-2xl shadow-zinc-600/50">
+        <div className="w-full grid md:grid-cols-3 mt-6 rounded-md overflow-hidden shadow-2xs shadow-zinc-600/50">
           {cardsData.map((card, index) => (
             <div
               key={index}
