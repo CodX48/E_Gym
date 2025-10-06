@@ -5,11 +5,11 @@ const NavBar = () => {
       <h1 className="text-4xl tracking-widest">SAMOKA.</h1>
 
       {/* Navigation Links */}
-      <div className="hidden md:flex justify-between items-center gap-8">
+        <div className="hidden md:flex justify-between items-center gap-8">
         <p className="hover:text-pink-600 cursor-pointer transition-colors">Home</p>
         <p className="hover:text-pink-600 cursor-pointer transition-colors"><a href="#PROGRAMS">Programs</a></p>
-        <p className="hover:text-pink-600 cursor-pointer transition-colors">Join Us</p>
-        <p className="hover:text-pink-600 cursor-pointer transition-colors">Contact Us</p>
+        <p className="hover:text-pink-600 cursor-pointer transition-colors"><a href="#plans">Join Us</a></p>
+        <p className="hover:text-pink-600 cursor-pointer transition-colors"><a href="#Contacts">Contact Us</a></p>
       </div>
 
       {/* Subscribe Button */}

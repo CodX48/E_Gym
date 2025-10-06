@@ -1,6 +1,7 @@
 import { NavBar } from "../components/NavBar";
 import { FitnessCards } from "../components/ProgramPlan";
 import { P_Cards } from "../components/ProgramsCards";
+import { ContactUsSection } from "../components/ContactUs"
 
 // HeroSection.jsx
 function HeroSection() {
@@ -45,14 +46,14 @@ function HeroSection() {
         {/* CTA */}
         <div className="mt-10 flex flex-wrap items-center gap-4">
           <a
-            href="#start"
+            href="#plans"
             className="rounded-xl bg-pink-500 px-8 py-3 text-lg font-semibold text-white transition hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-400 focus:ring-offset-2 focus:ring-offset-gray-900"
           >
             Start Your Journey
           </a>
 
           <a
-            href="#contact"
+            href="#Contacts"
             className="rounded-xl border border-white/30 px-8 py-3 text-lg font-semibold text-white/90 transition hover:border-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40 focus:ring-offset-2 focus:ring-offset-gray-900"
           >
             Contact Us
@@ -77,7 +78,7 @@ function HeroSection() {
 
       </div>
     </section>
-    <section className="w-[100%] relative flex flex-col justify-between items-start md:p-5 sm:p-2 gym-text ">
+    <section className="w-[100%] relative flex flex-col justify-between items-start md:p-5 sm:p-2 gym-text " id="plans">
     <div
         id="particles-js"
         className="top-0 absolute left-0 w-full h-full z-10 bg-gradient-to-b from-gray-900 to-gray-950"
@@ -86,6 +87,13 @@ function HeroSection() {
     </section>
     <section className="flex justify-center p-5 bg-gray-950 w-full" >
       <FitnessCards />
+    </section>
+
+    <section id="Contacts" className="w-full bg-gradient-to-b from-gray-950 to-gray-700 text-zinc-100 flex flex-col justify-between items-center px-20 py-10">
+      <div className="w-full m-10 ">
+        <h1 className="text-4xl">Socail Media</h1>
+      </div>
+      <ContactUsSection />
     </section>
     </>
   );

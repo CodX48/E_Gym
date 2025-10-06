@@ -47,15 +47,15 @@ const fitnessPlans = [
 function FitnessCards() {
   return (
     <div className="gym-text relative w-[100%] m-10 mb-20 z-10">
-      <div className="absolute translate-x-[50%] translate-y-[105%] left-0 w-[800px] h-[200px] bg-blue-600/10 blur-3xl z-20 rounded-full" />
-      <div className="absolute translate-x-[50%] translate-y-[170%] left-0 w-[900px] h-[200px] bg-teal-400/20 blur-3xl z-20 rounded-full" />
+      <div className="absolute translate-x-[50%] translate-y-[105%] left-0 w-[800px] h-[200px] bg-blue-600/10 blur-3xl z-20 rounded-full hidden sm:block"  />
+      <div className="absolute translate-x-[50%] translate-y-[170%] left-0 w-[900px] h-[200px] bg-teal-400/20 blur-3xl z-20 rounded-full hidden sm:block" />
       <h1 className="text-5xl mb-20 text-zinc-50">PLANS</h1>
       <div className="flex flex-col gap-10 sm:flex-col md:flex-col lg:flex-row xl:flex-row w-fit">
         {fitnessPlans.map((plan, index) => (
-          <div key={index} className={`relative max-w-[1200px] bg-zinc-950 p-6 text-zinc-800 flex flex-col justify-between ${window.innerWidth >= 750 ? "hover:-translate-y-5" : ""} ${plan.title == 'VIP' ? "ring-pink-300 ring-4 rounded-t-none overflow-visible ": "z-30"}  rounded-lg overflow-hidden`}
+          <div key={index} className={`relative max-w-[1200px] bg-zinc-950 p-6 text-zinc-800 flex flex-col justify-between ${window.innerWidth >= 750 ? "hover:-translate-y-5" : ""} ${plan.title == 'VIP' ? "ring-pink-300 ring-4 rounded-t-none overflow-visible mt-20 lg:mt-0 md:mt-0 xl:mt-0 sm:mt-0": "z-30"}  rounded-lg overflow-hidden`}
           style={{ transform: `translateY(${window.innerWidth >= 750 ? plan.level : 0}px)`,  transition: `all 0.5s`}}>
              {plan.title == "VIP" ? (<>
-             <div className="flex justify-center items-center w-full absolute left-0 -top-10 h-10 bg-pink-300 ring-pink-300 ring-4 rounded-t-xl " >
+             <div className="flex justify-center items-center w-full absolute left-0 -top-10 h-10 bg-pink-300 ring-pink-300 ring-4 rounded-t-xl" >
               <h1 className= "font-semibold text-zinc-800 text-2xl">Most Populer</h1>
              </div>
              </>) : ""}
