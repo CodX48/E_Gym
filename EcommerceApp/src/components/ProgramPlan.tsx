@@ -12,7 +12,8 @@ const fitnessPlans = [
     ],
     price:"1000 EGY",
     color: "#CD7F32",
-    level:"70"
+    level:"70",
+    message: "Hi! I’m interested in the Bronze Plan 🥉.\n\nI’d like to know more about:\n- Progress tracking and follow-ups\n- Adjusting exercises and diet\n\nCan you please share the next steps to start?",
   },
   {
     title: "VIP",
@@ -26,7 +27,9 @@ const fitnessPlans = [
 
     price:"2500 EGY",
     color: "#D81B60",
-    level:"-30"
+    level:"-30",
+    message: "Hey! I’m interested in the VIP Plan 💎.\n\nI want full support and frequent updates to reach my goals fast.\nPlease send me the details to get started — including payment info and next steps.",
+  
   },
   {
     title: "Silver",
@@ -40,7 +43,8 @@ const fitnessPlans = [
     
     price:"2000 EGY",
     color:"#FFD700",
-    level:"30"
+    level:"30",
+    message: "Hello! I’d like to join the Silver Plan 🥈.\n\nI’m looking for daily support and personalized tracking.\nCould you tell me how to begin and what details you need from me?",
   }
 ];
 
@@ -78,7 +82,11 @@ function FitnessCards() {
               ))}
             </ul>
             </div>
-            <button key={index} className="mt-10 w-full bg-zinc-100 text-zinc-900 rounded-md p-2 font-bold cursor-pointer z-50" >Choose</button>
+          <button key={index} className="mt-10 w-full bg-zinc-100 text-zinc-900 rounded-md p-2 font-bold cursor-pointer z-50" ><a
+          className=''
+          href={`https://wa.me/201095608395?text=${encodeURIComponent(plan.message)}`}
+          target="_blank"
+          rel="noopener noreferrer">Choose</a></button>
           </div>
         ))}
       </div>
