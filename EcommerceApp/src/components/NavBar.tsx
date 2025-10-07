@@ -1,12 +1,13 @@
 const NavBar = () => {
   return (
-    <div className="relative gym-text flex justify-between items-center px-10 p-5 text-zinc-50 ">
+    <div className="fixed w-full z-20 bg-zinc-500/50">
+    <div className="relative gym-text flex justify-between items-center px-10 p-3 text-zinc-50 ">
       {/* Logo */}
       <h1 className="text-4xl tracking-widest">SAMOKA.</h1>
 
       {/* Navigation Links */}
         <div className="hidden md:flex justify-between items-center gap-8">
-        <p className="hover:text-pink-600 cursor-pointer transition-colors">Home</p>
+        <p className="hover:text-pink-600 cursor-pointer transition-colors"><a href="#home">Home</a></p>
         <p className="hover:text-pink-600 cursor-pointer transition-colors"><a href="#PROGRAMS">Programs</a></p>
         <p className="hover:text-pink-600 cursor-pointer transition-colors"><a href="#plans">Join Us</a></p>
         <p className="hover:text-pink-600 cursor-pointer transition-colors"><a href="#Contacts">Contact Us</a></p>
@@ -16,6 +17,7 @@ const NavBar = () => {
       <button className="bg-pink-600 transition-colors text-white px-6 py-2 rounded-sm font-bold cursor-pointer hover:bg-pink-700">
         Subscribe
       </button>
+    </div>
     </div>
   );
 };

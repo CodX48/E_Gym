@@ -7,7 +7,7 @@ import { ContactUsSection } from "../components/ContactUs"
 function HeroSection() {
   return (
     <>
-    <section className="relative overflow-hidden text-white gym-text z-30 ">
+    <section className="relative overflow-hidden text-white gym-text z-30 " id="home">
       {/* Background overlay */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-gray-800/60 to-gray-900" />
       <NavBar/>
@@ -78,14 +78,14 @@ function HeroSection() {
 
       </div>
     </section>
-    <section className="w-[100%] relative flex flex-col justify-between items-start md:p-5 sm:p-2 gym-text " id="plans">
+    <section className="w-[100%] relative flex flex-col justify-between items-start md:p-5 sm:p-2 gym-text ">
     <div
         id="particles-js"
         className="top-0 absolute left-0 w-full h-full z-10 bg-gradient-to-b from-gray-900 to-gray-950"
         />
     <P_Cards />
     </section>
-    <section className="flex justify-center p-5 bg-gray-950 w-full" >
+    <section className="flex justify-center p-5 bg-gray-950 w-full" id="plans" >
       <FitnessCards />
     </section>
 
